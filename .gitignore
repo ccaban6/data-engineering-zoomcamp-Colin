@@ -1,0 +1,6 @@
+week-1/terrademo/.*
+week-1/terrademo/keys
+week-3/data-engine
+week-3/google-cloud-sdk
+week-3/*.csv 
+week-3/*.tar.gz 

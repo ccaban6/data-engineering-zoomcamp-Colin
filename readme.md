@@ -1,0 +1,3 @@
+## Data Engineering Zoomcamp
+
+This repository contains my course materials of following the Data Engineering Zoomcamp which will help expose me to data engineering concepts/tools/technologies. I hope to gain exposure to how this line of work interacts with Data Science and how I can incorporate this information into my future projects. Additionally, this is helping me understand Cloud Services as well and I can consider viewing datasets that are more larger scale in my projects.

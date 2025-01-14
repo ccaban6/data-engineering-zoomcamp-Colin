@@ -1,0 +1,26 @@
+## Thanks to the yaml file, we connect our different services into our network
+## This allows them to be automatically ran when we run our docker
+## instead of having to make multiple to boot them up separately
+
+### To run it, we use docker-compose up 
+### To shut it down, we use docker-compose down
+### To run it detached (with terminal in use and in parallel), use the -d flag 
+
+services:
+  pgdatabase:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=ny_taxi
+    volumes:
+      - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
+    ports:
+      - "5432:5432"
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "8080:80"
