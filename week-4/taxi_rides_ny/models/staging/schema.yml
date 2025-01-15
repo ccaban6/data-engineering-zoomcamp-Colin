@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: staging
-    database: kestra-sandbox-447522
-    schema: trips_data_all_colin
+    database: "{{ env_var('DBT_DATABASE', 'kestra-sandbox-447522') }}"
+    schema: "{{ env_var('DBT_SCHEMA', 'trips_data_all_colin') }}"
 
     tables:
       - name: green_tripdata
